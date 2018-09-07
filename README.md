@@ -42,3 +42,5 @@ import CGtk3
        ^
 error: terminated(1): /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swift-build-tool -f /Users/tabor.kelly/work/Gtk3/.build/debug.yaml main output:
 ```
+
+Here you see that `gtk/gtk.h` is not found, but `gtk/gtk.h` is located in `/usr/local/Cellar/gtk+3/3.22.30/include/gtk-3.0` which is clearly listed above by pkg-config.
