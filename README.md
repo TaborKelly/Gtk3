@@ -8,7 +8,13 @@ The code is taken pretty much verbatim the [official documentation](https://gith
 
 ## (not) building
 
-All notes were take in macOS 10.13.6 with Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2).
+### System configuration
+
+ - macOS 10.13.6
+ - Apple Swift version 4.1.2 (swiftlang-902.0.54 clang-902.0.39.2)
+ - XCode 9.4.1 (9F2000)
+ - Homebrew 1.7.3
+ - gtk3, from Homebrew: gtk+3: stable 3.22.30 (bottled)
 
 ### Install gtk3 from Homebrew
 
@@ -44,3 +50,7 @@ error: terminated(1): /Applications/Xcode.app/Contents/Developer/Toolchains/Xcod
 ```
 
 Here you see that `gtk/gtk.h` is not found, but `gtk/gtk.h` is located in `/usr/local/Cellar/gtk+3/3.22.30/include/gtk-3.0` which is clearly listed above by pkg-config.
+
+## Links
+
+I posted on [forums.swift.org about this](https://forums.swift.org/t/trouble-linking-to-system-library-with-pkgconfig) and no one replied so I went ahead and filed a [bug on bugs.swift.org](https://bugs.swift.org/browse/SR-8715) (SR-8715).
